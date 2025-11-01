@@ -7,31 +7,32 @@ By leveraging historical wind speed, weather, and turbine data, the model aims t
 
 
 Wind-Energy-Prediction-LSTM/
-│── data/ # Raw & processed datasets
-│ ├── wind_speed_data.csv
-│ ├── turbine_output_data.csv
-│ ├── feature_engineered_data.csv
-│ └── …
+Wind-Energy-Prediction-LSTM/
+│── data/                     # Raw & processed datasets
+│   ├── wind_speed_data.csv
+│   ├── turbine_output_data.csv
+│   ├── feature_engineered_data.csv
+│   └── …
 │
-│── notebooks/ # Jupyter notebooks illustrating the workflow
-│ ├── data_preprocessing.ipynb
-│ ├── modelling_lstm.ipynb
-│ └── results_analysis.ipynb
+│── notebooks/                # Jupyter notebooks illustrating the workflow
+│   ├── data_preprocessing.ipynb
+│   ├── modelling_lstm.ipynb
+│   └── results_analysis.ipynb
 │
-│── scripts/ # Python scripts for key steps
-│ ├── preprocess.py
-│ ├── train_model.py
-│ ├── evaluate_model.py
-│ └── deploy_model.py
+│── scripts/                  # Python scripts for key steps
+│   ├── preprocess.py
+│   ├── train_model.py
+│   ├── evaluate_model.py
+│   └── deploy_model.py
 │
-│── results/ # Model outputs, evaluation metrics & plots
-│ ├── predictions_test_set.csv
-│ ├── training_history.png
-│ ├── performance_metrics.txt
-│ └── …
+│── results/                  # Model outputs, evaluation metrics & plots
+│   ├── predictions_test_set.csv
+│   ├── training_history.png
+│   ├── performance_metrics.txt
+│   └── …
 │
-│── README.md # ← You are here
-│── requirements.txt # Python dependencies
+│── README.md                 # ← You are here
+│── requirements.txt          # Python dependencies
 
 
 
