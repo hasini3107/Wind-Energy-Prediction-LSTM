@@ -82,7 +82,12 @@ Wind-Energy-Prediction-LSTM/
 ```bash
 git clone https://github.com/hasini3107/Wind-Energy-Prediction-LSTM.git
 cd Wind-Energy-Prediction-LSTM
+```
+**2. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
+**3. Open the notebook
 ```bash
 jupyter notebook notebooks/modelling_lstm.ipynb
+```
