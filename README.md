@@ -3,7 +3,9 @@
 This project focuses on predicting wind energy generation using Long Short-Term Memory (LSTM) neural networks.  
 By leveraging historical wind speed, weather, and turbine data, the model aims to fore­cast future energy output and support renewable energy scheduling decisions.
 
-## Repository Structure  
+## 📂 Repository Structure
+
+
 Wind-Energy-Prediction-LSTM/
 │── data/ # Raw & processed datasets
 │ ├── wind_speed_data.csv
