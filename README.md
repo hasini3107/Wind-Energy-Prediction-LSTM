@@ -7,7 +7,8 @@ By leveraging historical wind speed, weather, and turbine data, the model aims t
 
 
 Wind-Energy-Prediction-LSTM/
-`~│── data/                     # Raw & processed datasets
+```
+│── data/                     # Raw & processed datasets
 │   ├── wind_speed_data.csv
 │   ├── turbine_output_data.csv
 │   ├── feature_engineered_data.csv
@@ -31,7 +32,8 @@ Wind-Energy-Prediction-LSTM/
 │   └── …
 │
 │── README.md                 # ← You are here
-│── requirements.txt          # Python dependencies`~
+│── requirements.txt          # Python dependencies```
+
 
 
 
