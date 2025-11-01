@@ -65,8 +65,6 @@ Wind-Energy-Prediction-LSTM/
 
 ---
 
----
-
 ## 📊 Key Results
 
 - **LSTM Model Accuracy:** R² ≈ 0.95  
