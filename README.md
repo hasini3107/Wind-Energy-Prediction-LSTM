@@ -91,3 +91,27 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook notebooks/modelling_lstm.ipynb
 ```
+---
+
+## 📦 Requirements
+
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn  
+- tensorflow / keras  
+
+---
+
+## ✨ Author
+
+**Hasini Unnamatla**  
+B.Tech – Computer Science & Engineering (AI & ML)  
+Kakinada Institute of Engineering and Technology  
+Project completed under **AICTE Internship – Energy Prediction (AIML Domain)**  
+
+🌐 **GitHub:** [hasini3107](https://github.com/hasini3107)  
+💼 **LinkedIn:** [Hasini Unnamatla](https://www.linkedin.com/in/hasini-unnamatla-365995334)
+
+---
