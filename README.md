@@ -32,7 +32,8 @@ Wind-Energy-Prediction-LSTM/
 │   └── …
 │
 │── README.md                 # ← You are here
-│── requirements.txt          # Python dependencies```
+│── requirements.txt          # Python dependencies
+```
 
 
 
