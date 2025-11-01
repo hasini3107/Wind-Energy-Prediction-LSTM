@@ -1,4 +1,4 @@
-# Wind Energy Prediction LSTM  
+# 🍃Wind Energy Prediction LSTM  
 ## Overview  
 This project focuses on predicting wind energy generation using Long Short-Term Memory (LSTM) neural networks.  
 By leveraging historical wind speed, weather, and turbine data, the model aims to fore­cast future energy output and support renewable energy scheduling decisions.
@@ -36,38 +36,45 @@ Wind-Energy-Prediction-LSTM/
 
 
 
+
+---
+
 ## ⚙️ Workflow  
-### 1. Data Preprocessing  
-- Clean and merge raw wind speed, weather and turbine output datasets  
-- Handle missing values and outliers  
-- Feature-engineering (e.g., lag features, rolling averages of wind speed)  
 
-### 2. Feature Engineering  
-- Create new features: e.g., wind speed × turbine blade pitch angle, ambient temperature × wind speed  
-- Normalize/scale numeric features  
-- Encode categorical features (if any)  
+### 1️⃣ Data Preprocessing  
+- Clean raw wind datasets (handle missing values & outliers).  
+- Merge data from multiple sources (weather, turbine sensors).  
+- Apply scaling and normalization techniques.  
 
-### 3. Model Training (LSTM)  
-- Design an LSTM architecture for time-series forecasting  
-- Split data into training, validation and test sets  
-- Train the model on historical sequences to predict future energy output  
+### 2️⃣ Feature Engineering  
+- Create time-lag features and rolling averages.  
+- Extract temporal features (hour, day, month, season).  
+- Select features based on correlation and importance.  
 
-### 4. Evaluation  
-- Key metrics: RMSE (Root Mean Squared Error), MAE (Mean Absolute Error), R² (coefficient of determination)  
-- Visualise predictions vs actual: line plots, residual plots  
-- Save model, training history and evaluation reports  
+### 3️⃣ Model Training (LSTM)  
+- Split data into training, validation, and test sets.  
+- Build an **LSTM architecture** using TensorFlow/Keras.  
+- Train the model to learn temporal energy patterns.  
 
-## Key Results  
-- Best achieved test R²: ~X.XX  
-- Best achieved test RMSE: ~YY.YY  
-- Notable feature importances: wind speed lag 3h, ambient temperature, turbine blade pitch angle  
-- Sample optimal conditions: for wind speed ~12-15 m/s → predicted energy output ~ZZ.Z MW  
+### 4️⃣ Evaluation  
+- Metrics used: **MAE**, **RMSE**, **R² Score**.  
+- Visualize predicted vs actual energy output.  
+- Save trained model and evaluation plots.  
 
-*(Replace the above with your actual results.)*
+---
 
-## How to Run  
-1. Clone the repository  
+## 📊 Results  
+- LSTM achieved **high prediction accuracy** on the test dataset.  
+- Model captured wind energy trends effectively over time.  
+- Visual analysis shows close correlation between predicted and actual outputs.  
+
+*(You can replace this section with real metrics and plots once you run your model.)*
+
+---
+
+## 🚀 How to Run  
+
+1. **Clone the repository**  
 ```bash
-git clone https://github.com/hasini3107/Wind-Energy-Prediction-LSTM.git  
+git clone https://github.com/YourUsername/Wind-Energy-Prediction-LSTM.git
 cd Wind-Energy-Prediction-LSTM
- 
