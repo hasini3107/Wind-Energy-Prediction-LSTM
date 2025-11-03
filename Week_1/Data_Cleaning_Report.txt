@@ -1,0 +1,37 @@
+
+Data Cleaning Report - Wind Energy Prediction (LSTM)
+---------------------------------------------------
+
+Dataset: Wind_Energy_Data_RAW.csv
+Cleaned File: Wind_Energy_Data_CLEANED.csv
+
+Overview:
+The dataset contains wind turbine operational data used for predicting wind energy output.
+It includes the following columns:
+1. Date/Time – Timestamp of the data point
+2. LV ActivePower (kW) – Actual power generated
+3. Wind Speed (m/s) – Wind speed in meters per second
+4. Theoretical Power Curve (KWh) – Predicted power from physics model
+5. Wind Direction (°) – Wind direction in degrees
+
+Cleaning Steps Performed:
+1. Converted the "Date/Time" column to a proper datetime format.
+2. Removed rows with missing or invalid data entries.
+3. Removed any duplicate records.
+4. Sorted the data chronologically.
+5. Reset index for clean structure.
+
+Summary:
+- Original dataset shape: 50,530 rows × 5 columns
+- Cleaned dataset shape: 50,530 rows × 5 columns
+- Missing values removed: 0
+- Duplicates removed: 0
+- Final dataset is clean and ready for preprocessing and model training.
+
+Target Variable:
+- LV ActivePower (kW) — This is the output we aim to predict using the LSTM model.
+
+Next Steps:
+- Perform data normalization and feature scaling.
+- Split dataset into training and testing sets.
+- Build and train the LSTM model for energy prediction.
