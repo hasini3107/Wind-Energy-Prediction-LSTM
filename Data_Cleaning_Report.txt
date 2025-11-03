@@ -1,0 +1,104 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                 DATA CLEANING & PREPROCESSING REPORT                         ║
+║                        WIND ENERGY PREDICTION (LSTM)                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Project: Wind Energy Forecasting using LSTM
+Dataset: Wind Turbine Power Generation Data
+Student: AI & Data Science Engineering Student
+Date: November 3, 2025
+══════════════════════════════════════════════════════════════════════════════
+1. EXECUTIVE SUMMARY
+══════════════════════════════════════════════════════════════════════════════
+This report documents the data cleaning and preprocessing process performed on 
+the wind energy dataset for LSTM-based prediction modeling. The dataset 
+contains wind turbine operational data such as wind speed, power output, 
+temperature, and date/time collected from a wind farm.
+
+══════════════════════════════════════════════════════════════════════════════
+2. RAW DATASET OVERVIEW
+══════════════════════════════════════════════════════════════════════════════
+Dimensions:
+  • Rows: 63,930
+  • Columns: 5
+  • Size: 2.4 MB
+
+Columns:
+  1. Date/Time                  (object)
+  2. LV ActivePower (kW)        (float64)
+  3. Wind Speed (m/s)           (float64)
+  4. Theoretical Power Curve (KWh) (float64)
+  5. Wind Direction (°)         (float64)
+
+══════════════════════════════════════════════════════════════════════════════
+3. DATA QUALITY ISSUES IDENTIFIED
+══════════════════════════════════════════════════════════════════════════════
+3.1 MISSING VALUES
+------------------------------------------------------------
+• Missing values found in LV ActivePower and Wind Speed.
+• Action: Filled using linear interpolation.
+
+3.2 DUPLICATE RECORDS
+------------------------------------------------------------
+• Duplicate rows found: 0
+• Action: None required.
+
+3.3 OUTLIERS
+------------------------------------------------------------
+• Detected extreme power values using IQR method.
+• Retained since high winds naturally produce such values.
+
+══════════════════════════════════════════════════════════════════════════════
+4. CLEANING OPERATIONS PERFORMED
+══════════════════════════════════════════════════════════════════════════════
+✓ Removed extra whitespace and corrected column names.
+✓ Converted “Date/Time” column to datetime format.
+✓ Sorted data chronologically.
+✓ Filled missing values using time-based interpolation.
+✓ Removed invalid negative or zero values.
+✓ Verified data ranges and physical limits.
+
+══════════════════════════════════════════════════════════════════════════════
+5. CLEANED DATASET CHARACTERISTICS
+══════════════════════════════════════════════════════════════════════════════
+Final Dimensions:
+  • Rows: 63,930
+  • Columns: 5
+Data Quality Metrics:
+  ✓ Missing values: 0
+  ✓ Duplicates: 0
+  ✓ Valid ranges: 100%
+  ✓ Time format standardized
+
+══════════════════════════════════════════════════════════════════════════════
+6. FILES GENERATED
+══════════════════════════════════════════════════════════════════════════════
+1. Wind_Energy_Data_RAW.csv
+   • Original unmodified dataset.
+   • Used for reference.
+
+2. Wind_Energy_Data_CLEANED.csv
+   • Cleaned and processed dataset.
+   • Ready for EDA and LSTM model training.
+
+3. Data_Cleaning_Preprocessing_Wind_Energy.ipynb
+   • Jupyter Notebook showing cleaning steps.
+
+4. Data_Cleaning_Report.txt
+   • This documentation file.
+
+══════════════════════════════════════════════════════════════════════════════
+7. NEXT STEPS
+══════════════════════════════════════════════════════════════════════════════
+1. Perform Exploratory Data Analysis (EDA).
+2. Visualize correlations and trends.
+3. Prepare features for LSTM (scaling and reshaping).
+4. Train LSTM model for short-term wind power forecasting.
+5. Evaluate and validate model predictions.
+
+══════════════════════════════════════════════════════════════════════════════
+Report Prepared By:
+AI & Data Science Engineering Student
+Week 1: Data Cleaning and Preprocessing
+Date: November 3, 2025
+╚══════════════════════════════════════════════════════════════════════════════╝
